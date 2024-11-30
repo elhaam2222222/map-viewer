@@ -1,0 +1,2357 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_851e0c3aea7ccc5fee188c59ca8ccd8d {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/leaflet.markercluster.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.Default.css"/>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet-minimap/3.6.1/Control.MiniMap.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet-minimap/3.6.1/Control.MiniMap.css"/>
+    <script src="https://cdn.jsdelivr.net/gh/ljagis/leaflet-measure@2.1.7/dist/leaflet-measure.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/ljagis/leaflet-measure@2.1.7/dist/leaflet-measure.min.css"/>
+    <script src="https://cdn.jsdelivr.net/gh/ardhi/Leaflet.MousePosition/src/L.Control.MousePosition.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/ardhi/Leaflet.MousePosition/src/L.Control.MousePosition.min.css"/>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet-search@2.9.7/dist/leaflet-search.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet-search@2.9.7/dist/leaflet-search.min.css"/>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet.fullscreen@3.0.0/Control.FullScreen.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet.fullscreen@3.0.0/Control.FullScreen.css"/>
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_851e0c3aea7ccc5fee188c59ca8ccd8d" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_851e0c3aea7ccc5fee188c59ca8ccd8d = L.map(
+                "map_851e0c3aea7ccc5fee188c59ca8ccd8d",
+                {
+                    center: [33.03006666666667, -6.474476470588232],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 6,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_7ea634f833fba9d6f799e286896c78ea = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detectRetina": false, "maxNativeZoom": 19, "maxZoom": 19, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_7ea634f833fba9d6f799e286896c78ea.addTo(map_851e0c3aea7ccc5fee188c59ca8ccd8d);
+        
+    
+            var marker_cluster_7c6ebbbab607ec27aeb472e60bb7c221 = L.markerClusterGroup(
+                {}
+            );
+        
+    
+            var circle_marker_0637a8facb663e45cc4f7e6b69bfd044 = L.circleMarker(
+                [33.53329999999999, -7.5833],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_7c6ebbbab607ec27aeb472e60bb7c221);
+        
+    
+        var popup_8258ff78375111ec5a3d3d15ba8b6c5f = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_d5834214b7d4756817979fa210bfbbd6 = $(`<div id="html_d5834214b7d4756817979fa210bfbbd6" style="width: 100.0%; height: 100.0%;">     <b>Ville :</b> Casablanca<br>     <b>Population :</b> 3,499,000     </div>`)[0];
+                popup_8258ff78375111ec5a3d3d15ba8b6c5f.setContent(html_d5834214b7d4756817979fa210bfbbd6);
+            
+        
+
+        circle_marker_0637a8facb663e45cc4f7e6b69bfd044.bindPopup(popup_8258ff78375111ec5a3d3d15ba8b6c5f)
+        ;
+
+        
+    
+    
+            var circle_marker_4c19e13400a4be12bc77b6bb5cee0dfe = L.circleMarker(
+                [34.043299999999995, -5.0033],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_7c6ebbbab607ec27aeb472e60bb7c221);
+        
+    
+        var popup_6021053f734ecc1783db79ad508dec09 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_5b0c80e10b29df87cc7696edc89d4892 = $(`<div id="html_5b0c80e10b29df87cc7696edc89d4892" style="width: 100.0%; height: 100.0%;">     <b>Ville :</b> Fès<br>     <b>Population :</b> 1,112,072     </div>`)[0];
+                popup_6021053f734ecc1783db79ad508dec09.setContent(html_5b0c80e10b29df87cc7696edc89d4892);
+            
+        
+
+        circle_marker_4c19e13400a4be12bc77b6bb5cee0dfe.bindPopup(popup_6021053f734ecc1783db79ad508dec09)
+        ;
+
+        
+    
+    
+            var circle_marker_9b1dbb176c9762218466bd23c79e45d9 = L.circleMarker(
+                [31.63, -8.0089],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_7c6ebbbab607ec27aeb472e60bb7c221);
+        
+    
+        var popup_7231169c17f6d53d084c864513c462af = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_892cd69e645a3152d24f5396f3c4a976 = $(`<div id="html_892cd69e645a3152d24f5396f3c4a976" style="width: 100.0%; height: 100.0%;">     <b>Ville :</b> Marrakech<br>     <b>Population :</b> 966,987     </div>`)[0];
+                popup_7231169c17f6d53d084c864513c462af.setContent(html_892cd69e645a3152d24f5396f3c4a976);
+            
+        
+
+        circle_marker_9b1dbb176c9762218466bd23c79e45d9.bindPopup(popup_7231169c17f6d53d084c864513c462af)
+        ;
+
+        
+    
+    
+            var circle_marker_103b6d9cbe9aef0231b3f423d0461daa = L.circleMarker(
+                [35.7767, -5.8039],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_7c6ebbbab607ec27aeb472e60bb7c221);
+        
+    
+        var popup_621d89049c0c6d7838c6cf4f52934236 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_4e277751ffb83d9aa4a6e182006a105d = $(`<div id="html_4e277751ffb83d9aa4a6e182006a105d" style="width: 100.0%; height: 100.0%;">     <b>Ville :</b> Tangier<br>     <b>Population :</b> 947,952     </div>`)[0];
+                popup_621d89049c0c6d7838c6cf4f52934236.setContent(html_4e277751ffb83d9aa4a6e182006a105d);
+            
+        
+
+        circle_marker_103b6d9cbe9aef0231b3f423d0461daa.bindPopup(popup_621d89049c0c6d7838c6cf4f52934236)
+        ;
+
+        
+    
+    
+            var circle_marker_ef6184ad8dbb0a9a80a8998c0e7b0ba0 = L.circleMarker(
+                [34.0333, -6.8],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_7c6ebbbab607ec27aeb472e60bb7c221);
+        
+    
+        var popup_8fd386c35b512e31e442b0369eb75528 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_2c74c0179303c7df28b0036393d13617 = $(`<div id="html_2c74c0179303c7df28b0036393d13617" style="width: 100.0%; height: 100.0%;">     <b>Ville :</b> Sale<br>     <b>Population :</b> 850,403     </div>`)[0];
+                popup_8fd386c35b512e31e442b0369eb75528.setContent(html_2c74c0179303c7df28b0036393d13617);
+            
+        
+
+        circle_marker_ef6184ad8dbb0a9a80a8998c0e7b0ba0.bindPopup(popup_8fd386c35b512e31e442b0369eb75528)
+        ;
+
+        
+    
+    
+            var circle_marker_ae8c086aabb690b0815b30870669e30a = L.circleMarker(
+                [34.0209, -6.841599999999999],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_7c6ebbbab607ec27aeb472e60bb7c221);
+        
+    
+        var popup_5590436503c657e378ccaf015aa7b231 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_949297c9e05dce432eb615db6e1441ad = $(`<div id="html_949297c9e05dce432eb615db6e1441ad" style="width: 100.0%; height: 100.0%;">     <b>Ville :</b> Rabat<br>     <b>Population :</b> 572,717     </div>`)[0];
+                popup_5590436503c657e378ccaf015aa7b231.setContent(html_949297c9e05dce432eb615db6e1441ad);
+            
+        
+
+        circle_marker_ae8c086aabb690b0815b30870669e30a.bindPopup(popup_5590436503c657e378ccaf015aa7b231)
+        ;
+
+        
+    
+    
+            var circle_marker_e0c967df25508a3ee8121faee847ce91 = L.circleMarker(
+                [33.894999999999996, -5.5547],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_7c6ebbbab607ec27aeb472e60bb7c221);
+        
+    
+        var popup_d3bd36491fec67581ccdfaffaa7aa378 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_9818bf85e2cf73b0cdce96931768bd04 = $(`<div id="html_9818bf85e2cf73b0cdce96931768bd04" style="width: 100.0%; height: 100.0%;">     <b>Ville :</b> Meknès<br>     <b>Population :</b> 520,428     </div>`)[0];
+                popup_d3bd36491fec67581ccdfaffaa7aa378.setContent(html_9818bf85e2cf73b0cdce96931768bd04);
+            
+        
+
+        circle_marker_e0c967df25508a3ee8121faee847ce91.bindPopup(popup_d3bd36491fec67581ccdfaffaa7aa378)
+        ;
+
+        
+    
+    
+            var circle_marker_209c6f747d1a5febe31365a9de9621fd = L.circleMarker(
+                [34.686699999999995, -1.9113999999999995],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_7c6ebbbab607ec27aeb472e60bb7c221);
+        
+    
+        var popup_12bdf610602569fe9eefa0a683873e76 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_b96d4265015ac6c1f149f87db4647b38 = $(`<div id="html_b96d4265015ac6c1f149f87db4647b38" style="width: 100.0%; height: 100.0%;">     <b>Ville :</b> Oujda-Angad<br>     <b>Population :</b> 494,252     </div>`)[0];
+                popup_12bdf610602569fe9eefa0a683873e76.setContent(html_b96d4265015ac6c1f149f87db4647b38);
+            
+        
+
+        circle_marker_209c6f747d1a5febe31365a9de9621fd.bindPopup(popup_12bdf610602569fe9eefa0a683873e76)
+        ;
+
+        
+    
+    
+            var circle_marker_9928aee122a21e18bcaf2df89480939f = L.circleMarker(
+                [34.24999999999999, -6.5832999999999995],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_7c6ebbbab607ec27aeb472e60bb7c221);
+        
+    
+        var popup_537e60ce0a267435c57444175de83134 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_1d213f47e0097b0b1f5d2162a205a300 = $(`<div id="html_1d213f47e0097b0b1f5d2162a205a300" style="width: 100.0%; height: 100.0%;">     <b>Ville :</b> Kenitra<br>     <b>Population :</b> 431,282     </div>`)[0];
+                popup_537e60ce0a267435c57444175de83134.setContent(html_1d213f47e0097b0b1f5d2162a205a300);
+            
+        
+
+        circle_marker_9928aee122a21e18bcaf2df89480939f.bindPopup(popup_537e60ce0a267435c57444175de83134)
+        ;
+
+        
+    
+    
+            var circle_marker_2ad250e3adac75847b392c0f2487b5c4 = L.circleMarker(
+                [30.433300000000003, -9.599999999999998],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_7c6ebbbab607ec27aeb472e60bb7c221);
+        
+    
+        var popup_c6120f85fa1f2d5ee77a2a1cf9768aec = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_8e6c065d08fabe56e484244fa6371e61 = $(`<div id="html_8e6c065d08fabe56e484244fa6371e61" style="width: 100.0%; height: 100.0%;">     <b>Ville :</b> Agadir<br>     <b>Population :</b> 421,844     </div>`)[0];
+                popup_c6120f85fa1f2d5ee77a2a1cf9768aec.setContent(html_8e6c065d08fabe56e484244fa6371e61);
+            
+        
+
+        circle_marker_2ad250e3adac75847b392c0f2487b5c4.bindPopup(popup_c6120f85fa1f2d5ee77a2a1cf9768aec)
+        ;
+
+        
+    
+    
+            var circle_marker_747d6821d7b59c69d57658e32f76251f = L.circleMarker(
+                [35.5667, -5.3667],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_7c6ebbbab607ec27aeb472e60bb7c221);
+        
+    
+        var popup_1d95e433ee5f6cf3235735c8a1962588 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_4b26d68032cb03075c169bdb0811ca08 = $(`<div id="html_4b26d68032cb03075c169bdb0811ca08" style="width: 100.0%; height: 100.0%;">     <b>Ville :</b> Tétouan<br>     <b>Population :</b> 380,787     </div>`)[0];
+                popup_1d95e433ee5f6cf3235735c8a1962588.setContent(html_4b26d68032cb03075c169bdb0811ca08);
+            
+        
+
+        circle_marker_747d6821d7b59c69d57658e32f76251f.bindPopup(popup_1d95e433ee5f6cf3235735c8a1962588)
+        ;
+
+        
+    
+    
+            var circle_marker_2a2d2f81f097cb5403f47aba5f9c7700 = L.circleMarker(
+                [34.41689999999999, -2.8849999999999993],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_7c6ebbbab607ec27aeb472e60bb7c221);
+        
+    
+        var popup_405af55affc86ec411e694b5ce98868c = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_821e2d6c3696932e303e78dbbe39ae6e = $(`<div id="html_821e2d6c3696932e303e78dbbe39ae6e" style="width: 100.0%; height: 100.0%;">     <b>Ville :</b> Taourirt<br>     <b>Population :</b> 321,876     </div>`)[0];
+                popup_405af55affc86ec411e694b5ce98868c.setContent(html_821e2d6c3696932e303e78dbbe39ae6e);
+            
+        
+
+        circle_marker_2a2d2f81f097cb5403f47aba5f9c7700.bindPopup(popup_405af55affc86ec411e694b5ce98868c)
+        ;
+
+        
+    
+    
+            var circle_marker_f0e155244e008b9e6990595deb68c48d = L.circleMarker(
+                [33.9267, -6.9121999999999995],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_7c6ebbbab607ec27aeb472e60bb7c221);
+        
+    
+        var popup_eb3e257d6948704c4eddf4b800bb66bf = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_8e8413bae15f3a8a48ce03318929a11b = $(`<div id="html_8e8413bae15f3a8a48ce03318929a11b" style="width: 100.0%; height: 100.0%;">     <b>Ville :</b> Temara<br>     <b>Population :</b> 313,510     </div>`)[0];
+                popup_eb3e257d6948704c4eddf4b800bb66bf.setContent(html_8e8413bae15f3a8a48ce03318929a11b);
+            
+        
+
+        circle_marker_f0e155244e008b9e6990595deb68c48d.bindPopup(popup_eb3e257d6948704c4eddf4b800bb66bf)
+        ;
+
+        
+    
+    
+            var circle_marker_8aec0d67091fcab051bd2b4ea1781e24 = L.circleMarker(
+                [32.28329999999998, -9.2333],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_7c6ebbbab607ec27aeb472e60bb7c221);
+        
+    
+        var popup_82936bc04e615f39bd61c5c4ad7d6743 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_65640cfaaafcf73413abd6579f495fb2 = $(`<div id="html_65640cfaaafcf73413abd6579f495fb2" style="width: 100.0%; height: 100.0%;">     <b>Ville :</b> Safi<br>     <b>Population :</b> 308,508     </div>`)[0];
+                popup_82936bc04e615f39bd61c5c4ad7d6743.setContent(html_65640cfaaafcf73413abd6579f495fb2);
+            
+        
+
+        circle_marker_8aec0d67091fcab051bd2b4ea1781e24.bindPopup(popup_82936bc04e615f39bd61c5c4ad7d6743)
+        ;
+
+        
+    
+    
+            var circle_marker_3e1ab8c56138023ca1d76a895cdad941 = L.circleMarker(
+                [32.93939999999999, -5.6674999999999995],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_7c6ebbbab607ec27aeb472e60bb7c221);
+        
+    
+        var popup_d33fc8869a06c7738812a2ffa704b3aa = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_1387c3ae334e3fbde58bd544770424f3 = $(`<div id="html_1387c3ae334e3fbde58bd544770424f3" style="width: 100.0%; height: 100.0%;">     <b>Ville :</b> Khénifra<br>     <b>Population :</b> 228,567     </div>`)[0];
+                popup_d33fc8869a06c7738812a2ffa704b3aa.setContent(html_1387c3ae334e3fbde58bd544770424f3);
+            
+        
+
+        circle_marker_3e1ab8c56138023ca1d76a895cdad941.bindPopup(popup_d33fc8869a06c7738812a2ffa704b3aa)
+        ;
+
+        
+    
+    
+            var circle_marker_d0fb61377b1525a4a8f417792902cbd5 = L.circleMarker(
+                [33.23329999999999, -8.5],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_7c6ebbbab607ec27aeb472e60bb7c221);
+        
+    
+        var popup_6f1eec29c4bdb3377d73d4819b1aee68 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_90446fcc87d40c7644ea8a3e048678a0 = $(`<div id="html_90446fcc87d40c7644ea8a3e048678a0" style="width: 100.0%; height: 100.0%;">     <b>Ville :</b> El Jadid<br>     <b>Population :</b> 220,181     </div>`)[0];
+                popup_6f1eec29c4bdb3377d73d4819b1aee68.setContent(html_90446fcc87d40c7644ea8a3e048678a0);
+            
+        
+
+        circle_marker_d0fb61377b1525a4a8f417792902cbd5.bindPopup(popup_6f1eec29c4bdb3377d73d4819b1aee68)
+        ;
+
+        
+    
+    
+            var circle_marker_55869841d2354975af33a95e75eeb3a2 = L.circleMarker(
+                [27.153600000000004, -13.2033],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_7c6ebbbab607ec27aeb472e60bb7c221);
+        
+    
+        var popup_90e5837bd82f87fb87cb8c258c315a0f = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_1abbb419d0a40de69c490a0968449952 = $(`<div id="html_1abbb419d0a40de69c490a0968449952" style="width: 100.0%; height: 100.0%;">     <b>Ville :</b> Laâyoune<br>     <b>Population :</b> 217,732     </div>`)[0];
+                popup_90e5837bd82f87fb87cb8c258c315a0f.setContent(html_1abbb419d0a40de69c490a0968449952);
+            
+        
+
+        circle_marker_55869841d2354975af33a95e75eeb3a2.bindPopup(popup_90e5837bd82f87fb87cb8c258c315a0f)
+        ;
+
+        
+    
+    
+            var circle_marker_364baee1b055c789b6a32b82343caf0f = L.circleMarker(
+                [33.6833, -7.383299999999999],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_7c6ebbbab607ec27aeb472e60bb7c221);
+        
+    
+        var popup_62ffbbfcd45e4a7f001dd3edd7a1bcd2 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_b4cea3934c6361b3bb7f2f085e061c66 = $(`<div id="html_b4cea3934c6361b3bb7f2f085e061c66" style="width: 100.0%; height: 100.0%;">     <b>Ville :</b> Mohammedia<br>     <b>Population :</b> 208,612     </div>`)[0];
+                popup_62ffbbfcd45e4a7f001dd3edd7a1bcd2.setContent(html_b4cea3934c6361b3bb7f2f085e061c66);
+            
+        
+
+        circle_marker_364baee1b055c789b6a32b82343caf0f.bindPopup(popup_62ffbbfcd45e4a7f001dd3edd7a1bcd2)
+        ;
+
+        
+    
+    
+            var circle_marker_6ae7a9457aea1bee96a224d51b041264 = L.circleMarker(
+                [32.8833, -6.916699999999999],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_7c6ebbbab607ec27aeb472e60bb7c221);
+        
+    
+        var popup_b9a4150ab7e8a133b2269560dd74bc26 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_ab4c639c150f7a9ff2004ab2a4068f8a = $(`<div id="html_ab4c639c150f7a9ff2004ab2a4068f8a" style="width: 100.0%; height: 100.0%;">     <b>Ville :</b> Kouribga<br>     <b>Population :</b> 196,196     </div>`)[0];
+                popup_b9a4150ab7e8a133b2269560dd74bc26.setContent(html_ab4c639c150f7a9ff2004ab2a4068f8a);
+            
+        
+
+        circle_marker_6ae7a9457aea1bee96a224d51b041264.bindPopup(popup_b9a4150ab7e8a133b2269560dd74bc26)
+        ;
+
+        
+    
+    
+            var circle_marker_b42468642eb2826f6b3c27a06a65c635 = L.circleMarker(
+                [32.3394, -6.360799999999999],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_7c6ebbbab607ec27aeb472e60bb7c221);
+        
+    
+        var popup_fb392e11931c1d41ea6f27c378ea2fc4 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_7c518c8e1fa01b0f939130fa87e14bb8 = $(`<div id="html_7c518c8e1fa01b0f939130fa87e14bb8" style="width: 100.0%; height: 100.0%;">     <b>Ville :</b> Béni Mellal<br>     <b>Population :</b> 192,676     </div>`)[0];
+                popup_fb392e11931c1d41ea6f27c378ea2fc4.setContent(html_7c518c8e1fa01b0f939130fa87e14bb8);
+            
+        
+
+        circle_marker_b42468642eb2826f6b3c27a06a65c635.bindPopup(popup_fb392e11931c1d41ea6f27c378ea2fc4)
+        ;
+
+        
+    
+    
+            var circle_marker_b6f2f135220f1c6050c8b19bb9761bdc = L.circleMarker(
+                [30.3342, -9.497199999999998],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_7c6ebbbab607ec27aeb472e60bb7c221);
+        
+    
+        var popup_db5146978f2fcd7547721bfd2da9956f = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_690648d70ddb4d8b81f985da7edb77cb = $(`<div id="html_690648d70ddb4d8b81f985da7edb77cb" style="width: 100.0%; height: 100.0%;">     <b>Ville :</b> Ait Melloul<br>     <b>Population :</b> 171,847     </div>`)[0];
+                popup_db5146978f2fcd7547721bfd2da9956f.setContent(html_690648d70ddb4d8b81f985da7edb77cb);
+            
+        
+
+        circle_marker_b6f2f135220f1c6050c8b19bb9761bdc.bindPopup(popup_db5146978f2fcd7547721bfd2da9956f)
+        ;
+
+        
+    
+    
+            var circle_marker_22a77fdb03b8a3a0e9ab069c34a218bd = L.circleMarker(
+                [35.1667, -2.9333],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_7c6ebbbab607ec27aeb472e60bb7c221);
+        
+    
+        var popup_d84e0e6187592629ed43347245a2628a = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_47dd75da3c8ddf5da3f05e29bbd3d7a9 = $(`<div id="html_47dd75da3c8ddf5da3f05e29bbd3d7a9" style="width: 100.0%; height: 100.0%;">     <b>Ville :</b> Nador<br>     <b>Population :</b> 161,726     </div>`)[0];
+                popup_d84e0e6187592629ed43347245a2628a.setContent(html_47dd75da3c8ddf5da3f05e29bbd3d7a9);
+            
+        
+
+        circle_marker_22a77fdb03b8a3a0e9ab069c34a218bd.bindPopup(popup_d84e0e6187592629ed43347245a2628a)
+        ;
+
+        
+    
+    
+            var circle_marker_4d43f6045bab98346ee0cb6aec0afbe1 = L.circleMarker(
+                [34.216699999999996, -4.016699999999999],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_7c6ebbbab607ec27aeb472e60bb7c221);
+        
+    
+        var popup_1cb7b3b5f9abfae734e3de219a0a8b34 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_13da756203e7987a6e551cd9e02db2de = $(`<div id="html_13da756203e7987a6e551cd9e02db2de" style="width: 100.0%; height: 100.0%;">     <b>Ville :</b> Taza<br>     <b>Population :</b> 148,456     </div>`)[0];
+                popup_1cb7b3b5f9abfae734e3de219a0a8b34.setContent(html_13da756203e7987a6e551cd9e02db2de);
+            
+        
+
+        circle_marker_4d43f6045bab98346ee0cb6aec0afbe1.bindPopup(popup_1cb7b3b5f9abfae734e3de219a0a8b34)
+        ;
+
+        
+    
+    
+            var circle_marker_832cdfcd91be13d1994286ed9e3dda3d = L.circleMarker(
+                [33.0, -7.616699999999998],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_7c6ebbbab607ec27aeb472e60bb7c221);
+        
+    
+        var popup_b500abc1792930ac804a5300c1832b52 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_0afee3696543e3a58b987928adefc0cf = $(`<div id="html_0afee3696543e3a58b987928adefc0cf" style="width: 100.0%; height: 100.0%;">     <b>Ville :</b> Settat<br>     <b>Population :</b> 142,250     </div>`)[0];
+                popup_b500abc1792930ac804a5300c1832b52.setContent(html_0afee3696543e3a58b987928adefc0cf);
+            
+        
+
+        circle_marker_832cdfcd91be13d1994286ed9e3dda3d.bindPopup(popup_b500abc1792930ac804a5300c1832b52)
+        ;
+
+        
+    
+    
+            var circle_marker_5a6b0e86b297eea88c583638a18d47c5 = L.circleMarker(
+                [33.2667, -7.5833],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_7c6ebbbab607ec27aeb472e60bb7c221);
+        
+    
+        var popup_4dbb141c866579845feec2cff08c5ad1 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_5974f6aa03495a9fb9388d3691278186 = $(`<div id="html_5974f6aa03495a9fb9388d3691278186" style="width: 100.0%; height: 100.0%;">     <b>Ville :</b> Barrechid<br>     <b>Population :</b> 136,634     </div>`)[0];
+                popup_4dbb141c866579845feec2cff08c5ad1.setContent(html_5974f6aa03495a9fb9388d3691278186);
+            
+        
+
+        circle_marker_5a6b0e86b297eea88c583638a18d47c5.bindPopup(popup_4dbb141c866579845feec2cff08c5ad1)
+        ;
+
+        
+    
+    
+            var circle_marker_452ec2dcf29e3ca7fe614363b7329234 = L.circleMarker(
+                [33.8167, -6.066699999999999],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_7c6ebbbab607ec27aeb472e60bb7c221);
+        
+    
+        var popup_03d67fc6412cdd3a61c6a226156e109d = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_852888624b51d56641b4a3e65d1d78ab = $(`<div id="html_852888624b51d56641b4a3e65d1d78ab" style="width: 100.0%; height: 100.0%;">     <b>Ville :</b> Al Khmissat<br>     <b>Population :</b> 131,542     </div>`)[0];
+                popup_03d67fc6412cdd3a61c6a226156e109d.setContent(html_852888624b51d56641b4a3e65d1d78ab);
+            
+        
+
+        circle_marker_452ec2dcf29e3ca7fe614363b7329234.bindPopup(popup_03d67fc6412cdd3a61c6a226156e109d)
+        ;
+
+        
+    
+    
+            var circle_marker_af829e6e1a38ac456c2bc134f963f511 = L.circleMarker(
+                [30.365799999999997, -9.5381],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_7c6ebbbab607ec27aeb472e60bb7c221);
+        
+    
+        var popup_b88ce5c946c7d90c6e8f4f2dd0cff2da = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_d0f3277926f31a41418561ed6062c503 = $(`<div id="html_d0f3277926f31a41418561ed6062c503" style="width: 100.0%; height: 100.0%;">     <b>Ville :</b> Inezgane<br>     <b>Population :</b> 130,333     </div>`)[0];
+                popup_b88ce5c946c7d90c6e8f4f2dd0cff2da.setContent(html_d0f3277926f31a41418561ed6062c503);
+            
+        
+
+        circle_marker_af829e6e1a38ac456c2bc134f963f511.bindPopup(popup_b88ce5c946c7d90c6e8f4f2dd0cff2da)
+        ;
+
+        
+    
+    
+            var circle_marker_0b9b58401cb5d351a523a773e10bdb10 = L.circleMarker(
+                [35.00899999999999, -5.9],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_7c6ebbbab607ec27aeb472e60bb7c221);
+        
+    
+        var popup_60bf04396b4472423f8d8b0c439c0889 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_5b856103f28a7344488c0995d8bcef1f = $(`<div id="html_5b856103f28a7344488c0995d8bcef1f" style="width: 100.0%; height: 100.0%;">     <b>Ville :</b> Ksar El Kebir<br>     <b>Population :</b> 126,617     </div>`)[0];
+                popup_60bf04396b4472423f8d8b0c439c0889.setContent(html_5b856103f28a7344488c0995d8bcef1f);
+            
+        
+
+        circle_marker_0b9b58401cb5d351a523a773e10bdb10.bindPopup(popup_60bf04396b4472423f8d8b0c439c0889)
+        ;
+
+        
+    
+    
+            var circle_marker_438f0fd75b01eb02743675407d5c0bef = L.circleMarker(
+                [30.38, -9.48],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_7c6ebbbab607ec27aeb472e60bb7c221);
+        
+    
+        var popup_73edb2a53071c207d3d863fa3b21f841 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_cca828fa3280254762a0d676b84bc01c = $(`<div id="html_cca828fa3280254762a0d676b84bc01c" style="width: 100.0%; height: 100.0%;">     <b>Ville :</b> My Drarga<br>     <b>Population :</b> 126,512     </div>`)[0];
+                popup_73edb2a53071c207d3d863fa3b21f841.setContent(html_cca828fa3280254762a0d676b84bc01c);
+            
+        
+
+        circle_marker_438f0fd75b01eb02743675407d5c0bef.bindPopup(popup_73edb2a53071c207d3d863fa3b21f841)
+        ;
+
+        
+    
+    
+            var circle_marker_1e494bc9969783e109f29fa2310d5ffd = L.circleMarker(
+                [35.18330000000001, -6.15],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_7c6ebbbab607ec27aeb472e60bb7c221);
+        
+    
+        var popup_804cd816d0ebac99a044b003db325574 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_f7a08de319cf3e38b2ce33aa1e99bc70 = $(`<div id="html_f7a08de319cf3e38b2ce33aa1e99bc70" style="width: 100.0%; height: 100.0%;">     <b>Ville :</b> Larache<br>     <b>Population :</b> 125,008     </div>`)[0];
+                popup_804cd816d0ebac99a044b003db325574.setContent(html_f7a08de319cf3e38b2ce33aa1e99bc70);
+            
+        
+
+        circle_marker_1e494bc9969783e109f29fa2310d5ffd.bindPopup(popup_804cd816d0ebac99a044b003db325574)
+        ;
+
+        
+    
+    
+            var circle_marker_377715d318f9759dabac79e278c3870b = L.circleMarker(
+                [28.9833, -10.066700000000003],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_7c6ebbbab607ec27aeb472e60bb7c221);
+        
+    
+        var popup_adab3df75d2b4cceb026ee7d6d308068 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_9a0071299b199f635fc773f4620b5dec = $(`<div id="html_9a0071299b199f635fc773f4620b5dec" style="width: 100.0%; height: 100.0%;">     <b>Ville :</b> Guelmim<br>     <b>Population :</b> 118,318     </div>`)[0];
+                popup_adab3df75d2b4cceb026ee7d6d308068.setContent(html_9a0071299b199f635fc773f4620b5dec);
+            
+        
+
+        circle_marker_377715d318f9759dabac79e278c3870b.bindPopup(popup_adab3df75d2b4cceb026ee7d6d308068)
+        ;
+
+        
+    
+    
+            var circle_marker_c5a52de85b364f8dca708a8450588d4a = L.circleMarker(
+                [34.9167, -2.3167],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_7c6ebbbab607ec27aeb472e60bb7c221);
+        
+    
+        var popup_fc7622de5936c8f747cab53c6d091a18 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_e9e84dcae3f2ea9cf0513d7f8f12e31e = $(`<div id="html_e9e84dcae3f2ea9cf0513d7f8f12e31e" style="width: 100.0%; height: 100.0%;">     <b>Ville :</b> Berkane<br>     <b>Population :</b> 109,237     </div>`)[0];
+                popup_fc7622de5936c8f747cab53c6d091a18.setContent(html_e9e84dcae3f2ea9cf0513d7f8f12e31e);
+            
+        
+
+        circle_marker_c5a52de85b364f8dca708a8450588d4a.bindPopup(popup_fc7622de5936c8f747cab53c6d091a18)
+        ;
+
+        
+    
+    
+            var circle_marker_85cb0523617830638d347839c32c9e41 = L.circleMarker(
+                [23.7081, -15.945599999999997],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_7c6ebbbab607ec27aeb472e60bb7c221);
+        
+    
+        var popup_f65ab35c3d3a207dd38039be323dd021 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_3fb31f2ee56f90fc0c7a0cbd4288f5d4 = $(`<div id="html_3fb31f2ee56f90fc0c7a0cbd4288f5d4" style="width: 100.0%; height: 100.0%;">     <b>Ville :</b> Ad Dakhla<br>     <b>Population :</b> 106,277     </div>`)[0];
+                popup_f65ab35c3d3a207dd38039be323dd021.setContent(html_3fb31f2ee56f90fc0c7a0cbd4288f5d4);
+            
+        
+
+        circle_marker_85cb0523617830638d347839c32c9e41.bindPopup(popup_f65ab35c3d3a207dd38039be323dd021)
+        ;
+
+        
+    
+    
+            var circle_marker_6d074edd3c3012a8afa59b3bd4236a55 = L.circleMarker(
+                [33.4489, -7.648599999999998],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_7c6ebbbab607ec27aeb472e60bb7c221);
+        
+    
+        var popup_3c14823e2dd66d9e6316efeb945a5a33 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_26304e18cf97e784ed912c36dde034e1 = $(`<div id="html_26304e18cf97e784ed912c36dde034e1" style="width: 100.0%; height: 100.0%;">     <b>Ville :</b> Bouskoura<br>     <b>Population :</b> 103,026     </div>`)[0];
+                popup_3c14823e2dd66d9e6316efeb945a5a33.setContent(html_26304e18cf97e784ed912c36dde034e1);
+            
+        
+
+        circle_marker_6d074edd3c3012a8afa59b3bd4236a55.bindPopup(popup_3c14823e2dd66d9e6316efeb945a5a33)
+        ;
+
+        
+    
+    
+            var circle_marker_b506d6600d53fb84d977e4fdc641b49a = L.circleMarker(
+                [32.5, -6.5333000000000006],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_7c6ebbbab607ec27aeb472e60bb7c221);
+        
+    
+        var popup_f8291186574f7d6bc78d96b17af0dd97 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_f7201fae4d5d1025b27acda180ff68ec = $(`<div id="html_f7201fae4d5d1025b27acda180ff68ec" style="width: 100.0%; height: 100.0%;">     <b>Ville :</b> Al Fqih Ben Çalah<br>     <b>Population :</b> 102,019     </div>`)[0];
+                popup_f8291186574f7d6bc78d96b17af0dd97.setContent(html_f7201fae4d5d1025b27acda180ff68ec);
+            
+        
+
+        circle_marker_b506d6600d53fb84d977e4fdc641b49a.bindPopup(popup_f8291186574f7d6bc78d96b17af0dd97)
+        ;
+
+        
+    
+    
+            var circle_marker_d138b2eaa8d940a9c7c531f63487d9bd = L.circleMarker(
+                [32.8667, -6.566699999999999],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_7c6ebbbab607ec27aeb472e60bb7c221);
+        
+    
+        var popup_2103c66faa54a8387329039f13e9a39d = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_88f4b5eece9898b8e7781eda5e96befd = $(`<div id="html_88f4b5eece9898b8e7781eda5e96befd" style="width: 100.0%; height: 100.0%;">     <b>Ville :</b> Oued Zem<br>     <b>Population :</b> 95,267     </div>`)[0];
+                popup_2103c66faa54a8387329039f13e9a39d.setContent(html_88f4b5eece9898b8e7781eda5e96befd);
+            
+        
+
+        circle_marker_d138b2eaa8d940a9c7c531f63487d9bd.bindPopup(popup_2103c66faa54a8387329039f13e9a39d)
+        ;
+
+        
+    
+    
+            var circle_marker_eeb38eaae723c80bdf8c50e5eb8562c4 = L.circleMarker(
+                [34.25999999999999, -5.92],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_7c6ebbbab607ec27aeb472e60bb7c221);
+        
+    
+        var popup_e8c5f6124282b913de266d05c0d1c58c = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_ea72f3ab226bbf6ac6b754e4cc4187bf = $(`<div id="html_ea72f3ab226bbf6ac6b754e4cc4187bf" style="width: 100.0%; height: 100.0%;">     <b>Ville :</b> Sidi Slimane<br>     <b>Population :</b> 92,989     </div>`)[0];
+                popup_e8c5f6124282b913de266d05c0d1c58c.setContent(html_ea72f3ab226bbf6ac6b754e4cc4187bf);
+            
+        
+
+        circle_marker_eeb38eaae723c80bdf8c50e5eb8562c4.bindPopup(popup_e8c5f6124282b913de266d05c0d1c58c)
+        ;
+
+        
+    
+    
+            var circle_marker_8d4e2816f6fec7aed66b7d9e1e6d0762 = L.circleMarker(
+                [31.9319, -4.4244],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_7c6ebbbab607ec27aeb472e60bb7c221);
+        
+    
+        var popup_f221407efcc9ce5c2ce3720e95910e7d = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_a9252496f85fd9eb736c72fb41110a9c = $(`<div id="html_a9252496f85fd9eb736c72fb41110a9c" style="width: 100.0%; height: 100.0%;">     <b>Ville :</b> Errachidia<br>     <b>Population :</b> 92,374     </div>`)[0];
+                popup_f221407efcc9ce5c2ce3720e95910e7d.setContent(html_a9252496f85fd9eb736c72fb41110a9c);
+            
+        
+
+        circle_marker_8d4e2816f6fec7aed66b7d9e1e6d0762.bindPopup(popup_f221407efcc9ce5c2ce3720e95910e7d)
+        ;
+
+        
+    
+    
+            var circle_marker_3a72f058820df85bd61f487d656b5d83 = L.circleMarker(
+                [34.2333, -3.3667],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_7c6ebbbab607ec27aeb472e60bb7c221);
+        
+    
+        var popup_4b0c111e186d3a091e4f57cc32e1ffcf = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_a5394084019e19b0b869ba1c7d3157fa = $(`<div id="html_a5394084019e19b0b869ba1c7d3157fa" style="width: 100.0%; height: 100.0%;">     <b>Ville :</b> Guercif<br>     <b>Population :</b> 90,880     </div>`)[0];
+                popup_4b0c111e186d3a091e4f57cc32e1ffcf.setContent(html_a5394084019e19b0b869ba1c7d3157fa);
+            
+        
+
+        circle_marker_3a72f058820df85bd61f487d656b5d83.bindPopup(popup_4b0c111e186d3a091e4f57cc32e1ffcf)
+        ;
+
+        
+    
+    
+            var circle_marker_9ea25a59be5a285936f05043ff8aa6ae = L.circleMarker(
+                [30.39999999999999, -9.216699999999998],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_7c6ebbbab607ec27aeb472e60bb7c221);
+        
+    
+        var popup_1dbefdcdc760645e98a0ec1a983e7328 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_8e2281377c0039cb9cd2f5e5e24bc143 = $(`<div id="html_8e2281377c0039cb9cd2f5e5e24bc143" style="width: 100.0%; height: 100.0%;">     <b>Ville :</b> Oulad Teïma<br>     <b>Population :</b> 89,387     </div>`)[0];
+                popup_1dbefdcdc760645e98a0ec1a983e7328.setContent(html_8e2281377c0039cb9cd2f5e5e24bc143);
+            
+        
+
+        circle_marker_9ea25a59be5a285936f05043ff8aa6ae.bindPopup(popup_1dbefdcdc760645e98a0ec1a983e7328)
+        ;
+
+        
+    
+    
+            var circle_marker_a897eb15a06deaeae360ba959e9a7e4c = L.circleMarker(
+                [32.22999999999999, -7.95],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_7c6ebbbab607ec27aeb472e60bb7c221);
+        
+    
+        var popup_4e0d187af41bf1c59daf691977d34e9f = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_bad4207004d8ac5a7b5f4296bd8989ab = $(`<div id="html_bad4207004d8ac5a7b5f4296bd8989ab" style="width: 100.0%; height: 100.0%;">     <b>Ville :</b> Ben Guerir<br>     <b>Population :</b> 88,626     </div>`)[0];
+                popup_4e0d187af41bf1c59daf691977d34e9f.setContent(html_bad4207004d8ac5a7b5f4296bd8989ab);
+            
+        
+
+        circle_marker_a897eb15a06deaeae360ba959e9a7e4c.bindPopup(popup_4e0d187af41bf1c59daf691977d34e9f)
+        ;
+
+        
+    
+    
+            var circle_marker_c14f398d4e0804c141e14204f1e2a5ab = L.circleMarker(
+                [33.83, -4.83],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_7c6ebbbab607ec27aeb472e60bb7c221);
+        
+    
+        var popup_a0a2656f36934f7ef76f255669b0bdf0 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_02f507f4c8a019c8347477af8a96f7d5 = $(`<div id="html_02f507f4c8a019c8347477af8a96f7d5" style="width: 100.0%; height: 100.0%;">     <b>Ville :</b> Sefrou<br>     <b>Population :</b> 79,887     </div>`)[0];
+                popup_a0a2656f36934f7ef76f255669b0bdf0.setContent(html_02f507f4c8a019c8347477af8a96f7d5);
+            
+        
+
+        circle_marker_c14f398d4e0804c141e14204f1e2a5ab.bindPopup(popup_a0a2656f36934f7ef76f255669b0bdf0)
+        ;
+
+        
+    
+    
+            var circle_marker_ba9444b063f6a1c6b14227d6a5c82c1e = L.circleMarker(
+                [35.85, -5.35],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_7c6ebbbab607ec27aeb472e60bb7c221);
+        
+    
+        var popup_973f9074dfd3821ac21171c6385ba42c = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_cee75dd32692267e5e7ff963609fe131 = $(`<div id="html_cee75dd32692267e5e7ff963609fe131" style="width: 100.0%; height: 100.0%;">     <b>Ville :</b> Fnidq<br>     <b>Population :</b> 77,436     </div>`)[0];
+                popup_973f9074dfd3821ac21171c6385ba42c.setContent(html_cee75dd32692267e5e7ff963609fe131);
+            
+        
+
+        circle_marker_ba9444b063f6a1c6b14227d6a5c82c1e.bindPopup(popup_973f9074dfd3821ac21171c6385ba42c)
+        ;
+
+        
+    
+    
+            var circle_marker_611c225fea314c457fa13b0d049205c7 = L.circleMarker(
+                [34.216699999999996, -5.699999999999999],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_7c6ebbbab607ec27aeb472e60bb7c221);
+        
+    
+        var popup_b1c57bb02b87dbfc00bd741ba5126089 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_fbdd795bd818dbfd1a731512b20ab871 = $(`<div id="html_fbdd795bd818dbfd1a731512b20ab871" style="width: 100.0%; height: 100.0%;">     <b>Ville :</b> Sidi Qacem<br>     <b>Population :</b> 75,672     </div>`)[0];
+                popup_b1c57bb02b87dbfc00bd741ba5126089.setContent(html_fbdd795bd818dbfd1a731512b20ab871);
+            
+        
+
+        circle_marker_611c225fea314c457fa13b0d049205c7.bindPopup(popup_b1c57bb02b87dbfc00bd741ba5126089)
+        ;
+
+        
+    
+    
+            var circle_marker_4b646d2232b47bdbcc2a79266d6778b2 = L.circleMarker(
+                [29.716699999999996, -9.7167],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_7c6ebbbab607ec27aeb472e60bb7c221);
+        
+    
+        var popup_3cac1f17e71ebbaf661a7acb412f4fd0 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_fc2861b7f6b2a5fee495116b806475eb = $(`<div id="html_fc2861b7f6b2a5fee495116b806475eb" style="width: 100.0%; height: 100.0%;">     <b>Ville :</b> Tiznit<br>     <b>Population :</b> 74,699     </div>`)[0];
+                popup_3cac1f17e71ebbaf661a7acb412f4fd0.setContent(html_fc2861b7f6b2a5fee495116b806475eb);
+            
+        
+
+        circle_marker_4b646d2232b47bdbcc2a79266d6778b2.bindPopup(popup_3cac1f17e71ebbaf661a7acb412f4fd0)
+        ;
+
+        
+    
+    
+            var circle_marker_f245ccd82edbfb9ba4fd257030f81681 = L.circleMarker(
+                [33.197799999999994, -8.588299999999998],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_7c6ebbbab607ec27aeb472e60bb7c221);
+        
+    
+        var popup_9326b92f41c8fc3f8fc0418971c6efe4 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_f707749649bea39476a22347a38a4740 = $(`<div id="html_f707749649bea39476a22347a38a4740" style="width: 100.0%; height: 100.0%;">     <b>Ville :</b> Moulay Abdallah<br>     <b>Population :</b> 74,671     </div>`)[0];
+                popup_9326b92f41c8fc3f8fc0418971c6efe4.setContent(html_f707749649bea39476a22347a38a4740);
+            
+        
+
+        circle_marker_f245ccd82edbfb9ba4fd257030f81681.bindPopup(popup_9326b92f41c8fc3f8fc0418971c6efe4)
+        ;
+
+        
+    
+    
+            var circle_marker_37644041894a9d56ac2c5978508e8c51 = L.circleMarker(
+                [32.25, -8.533299999999999],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_7c6ebbbab607ec27aeb472e60bb7c221);
+        
+    
+        var popup_a143a308eb4327dcb023c983297190d9 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_e949444d4caacffbcd8e25a039096a09 = $(`<div id="html_e949444d4caacffbcd8e25a039096a09" style="width: 100.0%; height: 100.0%;">     <b>Ville :</b> Youssoufia<br>     <b>Population :</b> 67,628     </div>`)[0];
+                popup_a143a308eb4327dcb023c983297190d9.setContent(html_e949444d4caacffbcd8e25a039096a09);
+            
+        
+
+        circle_marker_37644041894a9d56ac2c5978508e8c51.bindPopup(popup_a143a308eb4327dcb023c983297190d9)
+        ;
+
+        
+    
+    
+            var circle_marker_4d16600a4947cc5cde00b1fb342600d2 = L.circleMarker(
+                [35.6167, -5.2667],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_7c6ebbbab607ec27aeb472e60bb7c221);
+        
+    
+        var popup_b2276473428e3afdb29ee4848c3b0013 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_973257a3bf0c533a468a68058e312da1 = $(`<div id="html_973257a3bf0c533a468a68058e312da1" style="width: 100.0%; height: 100.0%;">     <b>Ville :</b> Martil<br>     <b>Population :</b> 64,355     </div>`)[0];
+                popup_b2276473428e3afdb29ee4848c3b0013.setContent(html_973257a3bf0c533a468a68058e312da1);
+            
+        
+
+        circle_marker_4d16600a4947cc5cde00b1fb342600d2.bindPopup(popup_b2276473428e3afdb29ee4848c3b0013)
+        ;
+
+        
+    
+    
+            var circle_marker_1c6cf1307e945072cdece2e9e28c421d = L.circleMarker(
+                [33.6372, -7.4483],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_7c6ebbbab607ec27aeb472e60bb7c221);
+        
+    
+        var popup_c428625e098450fb79a222096f3be007 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_e8a5cb4595b49c648c4f2c237b5bc56a = $(`<div id="html_e8a5cb4595b49c648c4f2c237b5bc56a" style="width: 100.0%; height: 100.0%;">     <b>Ville :</b> Aïn Harrouda<br>     <b>Population :</b> 62,420     </div>`)[0];
+                popup_c428625e098450fb79a222096f3be007.setContent(html_e8a5cb4595b49c648c4f2c237b5bc56a);
+            
+        
+
+        circle_marker_1c6cf1307e945072cdece2e9e28c421d.bindPopup(popup_c428625e098450fb79a222096f3be007)
+        ;
+
+        
+    
+    
+            var circle_marker_d29548a4eb4c183f812047cdcf220dcd = L.circleMarker(
+                [32.29480000000001, -6.700699999999999],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_7c6ebbbab607ec27aeb472e60bb7c221);
+        
+    
+        var popup_579e0a25e284516d63bbbb5c8142c8c1 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_0bf77cb96cf6a9078ebc3f7f6a12c3b2 = $(`<div id="html_0bf77cb96cf6a9078ebc3f7f6a12c3b2" style="width: 100.0%; height: 100.0%;">     <b>Ville :</b> Souq Sebt Oulad Nemma<br>     <b>Population :</b> 60,076     </div>`)[0];
+                popup_579e0a25e284516d63bbbb5c8142c8c1.setContent(html_0bf77cb96cf6a9078ebc3f7f6a12c3b2);
+            
+        
+
+        circle_marker_d29548a4eb4c183f812047cdcf220dcd.bindPopup(popup_579e0a25e284516d63bbbb5c8142c8c1)
+        ;
+
+        
+    
+    
+            var circle_marker_700ee6ce41a60236030beae022f1abb3 = L.circleMarker(
+                [33.85000000000001, -7.029999999999999],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_7c6ebbbab607ec27aeb472e60bb7c221);
+        
+    
+        var popup_e4e3be755ac2459f775274d36c1d1bda = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_229569ce9b305d5205bedfaa42224558 = $(`<div id="html_229569ce9b305d5205bedfaa42224558" style="width: 100.0%; height: 100.0%;">     <b>Ville :</b> Skhirate<br>     <b>Population :</b> 59,775     </div>`)[0];
+                popup_e4e3be755ac2459f775274d36c1d1bda.setContent(html_229569ce9b305d5205bedfaa42224558);
+            
+        
+
+        circle_marker_700ee6ce41a60236030beae022f1abb3.bindPopup(popup_e4e3be755ac2459f775274d36c1d1bda)
+        ;
+
+        
+    
+    
+            var circle_marker_60af05f3b47442ea1e99c916d9a044dd = L.circleMarker(
+                [34.79999999999999, -5.5832999999999995],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_7c6ebbbab607ec27aeb472e60bb7c221);
+        
+    
+        var popup_74a3e9c19484f6def90939a383c2bedb = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_891d011863a0330775b323c1e3971531 = $(`<div id="html_891d011863a0330775b323c1e3971531" style="width: 100.0%; height: 100.0%;">     <b>Ville :</b> Ouezzane<br>     <b>Population :</b> 59,606     </div>`)[0];
+                popup_74a3e9c19484f6def90939a383c2bedb.setContent(html_891d011863a0330775b323c1e3971531);
+            
+        
+
+        circle_marker_60af05f3b47442ea1e99c916d9a044dd.bindPopup(popup_74a3e9c19484f6def90939a383c2bedb)
+        ;
+
+        
+    
+    
+            var circle_marker_49bc7ceab3e9b8069ef95701a8fd8b13 = L.circleMarker(
+                [33.7105, -6.8831],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_7c6ebbbab607ec27aeb472e60bb7c221);
+        
+    
+        var popup_46030fc07b15cfa4c141627145828f53 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_d7831df97fb0a84234caadb77720beed = $(`<div id="html_d7831df97fb0a84234caadb77720beed" style="width: 100.0%; height: 100.0%;">     <b>Ville :</b> Sidi Yahya Zaer<br>     <b>Population :</b> 57,790     </div>`)[0];
+                popup_46030fc07b15cfa4c141627145828f53.setContent(html_d7831df97fb0a84234caadb77720beed);
+            
+        
+
+        circle_marker_49bc7ceab3e9b8069ef95701a8fd8b13.bindPopup(popup_46030fc07b15cfa4c141627145828f53)
+        ;
+
+        
+    
+    
+            var circle_marker_c92e8aac50a1a8fa766e2767331ecb2a = L.circleMarker(
+                [35.24719999999999, -3.9321999999999995],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_7c6ebbbab607ec27aeb472e60bb7c221);
+        
+    
+        var popup_10b76c8c9a01b4c8be9f6480556dbb60 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_ba2931032e88b85bdee534199262b21b = $(`<div id="html_ba2931032e88b85bdee534199262b21b" style="width: 100.0%; height: 100.0%;">     <b>Ville :</b> Al Hoceïma<br>     <b>Population :</b> 56,716     </div>`)[0];
+                popup_10b76c8c9a01b4c8be9f6480556dbb60.setContent(html_ba2931032e88b85bdee534199262b21b);
+            
+        
+
+        circle_marker_c92e8aac50a1a8fa766e2767331ecb2a.bindPopup(popup_10b76c8c9a01b4c8be9f6480556dbb60)
+        ;
+
+        
+    
+    
+            var circle_marker_80c6eef8369e85490b121c91e9069730 = L.circleMarker(
+                [35.68579999999999, -5.3253],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_7c6ebbbab607ec27aeb472e60bb7c221);
+        
+    
+        var popup_6e55e60f0a268e6a5ad7c0a945b64383 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_fb750570d632cd8e9b96520e8ea21825 = $(`<div id="html_fb750570d632cd8e9b96520e8ea21825" style="width: 100.0%; height: 100.0%;">     <b>Ville :</b> M’diq<br>     <b>Population :</b> 56,227     </div>`)[0];
+                popup_6e55e60f0a268e6a5ad7c0a945b64383.setContent(html_fb750570d632cd8e9b96520e8ea21825);
+            
+        
+
+        circle_marker_80c6eef8369e85490b121c91e9069730.bindPopup(popup_6e55e60f0a268e6a5ad7c0a945b64383)
+        ;
+
+        
+    
+    
+            var circle_marker_cb20387bf3ba1d744d6a81df82fe9d91 = L.circleMarker(
+                [32.68000000000001, -4.73],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_7c6ebbbab607ec27aeb472e60bb7c221);
+        
+    
+        var popup_d995ae6e3d313f248d23f91115284e95 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_eac5fb30224ceea8930b4ec5d9faf1c6 = $(`<div id="html_eac5fb30224ceea8930b4ec5d9faf1c6" style="width: 100.0%; height: 100.0%;">     <b>Ville :</b> Midalt<br>     <b>Population :</b> 55,304     </div>`)[0];
+                popup_d995ae6e3d313f248d23f91115284e95.setContent(html_eac5fb30224ceea8930b4ec5d9faf1c6);
+            
+        
+
+        circle_marker_cb20387bf3ba1d744d6a81df82fe9d91.bindPopup(popup_d995ae6e3d313f248d23f91115284e95)
+        ;
+
+        
+    
+    
+            var circle_marker_7d6eb20fe7f9a880c28c129d96606e72 = L.circleMarker(
+                [33.44169999999999, -5.2247],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_7c6ebbbab607ec27aeb472e60bb7c221);
+        
+    
+        var popup_019b4e6e654b31257c34bc095cea431f = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_d8a12ee324f901f5c151706028335345 = $(`<div id="html_d8a12ee324f901f5c151706028335345" style="width: 100.0%; height: 100.0%;">     <b>Ville :</b> Azrou<br>     <b>Population :</b> 54,350     </div>`)[0];
+                popup_019b4e6e654b31257c34bc095cea431f.setContent(html_d8a12ee324f901f5c151706028335345);
+            
+        
+
+        circle_marker_7d6eb20fe7f9a880c28c129d96606e72.bindPopup(popup_019b4e6e654b31257c34bc095cea431f)
+        ;
+
+        
+    
+    
+            var circle_marker_aedabc42e340cafdba106d9701a9fd79 = L.circleMarker(
+                [32.0481, -7.408299999999999],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_7c6ebbbab607ec27aeb472e60bb7c221);
+        
+    
+        var popup_01b168d6af08fb76262b7a5618d0ab71 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_c6d7f17bf8848a6ac2b85e13d588dc44 = $(`<div id="html_c6d7f17bf8848a6ac2b85e13d588dc44" style="width: 100.0%; height: 100.0%;">     <b>Ville :</b> El Kelaa des Srarhna<br>     <b>Population :</b> 51,404     </div>`)[0];
+                popup_01b168d6af08fb76262b7a5618d0ab71.setContent(html_c6d7f17bf8848a6ac2b85e13d588dc44);
+            
+        
+
+        circle_marker_aedabc42e340cafdba106d9701a9fd79.bindPopup(popup_01b168d6af08fb76262b7a5618d0ab71)
+        ;
+
+        
+    
+    
+            var circle_marker_785fb2fd3d7d7512668f1af323ff27ec = L.circleMarker(
+                [33.811099999999996, -6.7922],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_7c6ebbbab607ec27aeb472e60bb7c221);
+        
+    
+        var popup_9da49722c4fe2cb9b9583c0bd271d1ee = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_d47588a40bbb6a951a177a3474375766 = $(`<div id="html_d47588a40bbb6a951a177a3474375766" style="width: 100.0%; height: 100.0%;">     <b>Ville :</b> Ain El Aouda<br>     <b>Population :</b> 49,816     </div>`)[0];
+                popup_9da49722c4fe2cb9b9583c0bd271d1ee.setContent(html_d47588a40bbb6a951a177a3474375766);
+            
+        
+
+        circle_marker_785fb2fd3d7d7512668f1af323ff27ec.bindPopup(popup_9da49722c4fe2cb9b9583c0bd271d1ee)
+        ;
+
+        
+    
+    
+            var circle_marker_d832115ec684308b42ae661d496c28f1 = L.circleMarker(
+                [33.6555, -7.3221],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_7c6ebbbab607ec27aeb472e60bb7c221);
+        
+    
+        var popup_4039d2670f1d36df22145d445c09703d = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_dcf9babba0845ddccac51f98d991099a = $(`<div id="html_dcf9babba0845ddccac51f98d991099a" style="width: 100.0%; height: 100.0%;">     <b>Ville :</b> Beni Yakhlef<br>     <b>Population :</b> 48,338     </div>`)[0];
+                popup_4039d2670f1d36df22145d445c09703d.setContent(html_dcf9babba0845ddccac51f98d991099a);
+            
+        
+
+        circle_marker_d832115ec684308b42ae661d496c28f1.bindPopup(popup_4039d2670f1d36df22145d445c09703d)
+        ;
+
+        
+    
+    
+            var circle_marker_c2c91df9b41d3f4ff582a1b11c284461 = L.circleMarker(
+                [33.4167, -7.533299999999999],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_7c6ebbbab607ec27aeb472e60bb7c221);
+        
+    
+        var popup_2e7bf02208938b48db61f6c33597edbc = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_ff25324004380bd7ada2f7110568dd8d = $(`<div id="html_ff25324004380bd7ada2f7110568dd8d" style="width: 100.0%; height: 100.0%;">     <b>Ville :</b> Ad Darwa<br>     <b>Population :</b> 47,719     </div>`)[0];
+                popup_2e7bf02208938b48db61f6c33597edbc.setContent(html_ff25324004380bd7ada2f7110568dd8d);
+            
+        
+
+        circle_marker_c2c91df9b41d3f4ff582a1b11c284461.bindPopup(popup_2e7bf02208938b48db61f6c33597edbc)
+        ;
+
+        
+    
+    
+            var circle_marker_36d365a78e0106d8f861f0d3e0c03d0c = L.circleMarker(
+                [35.0029, -3.0311],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_7c6ebbbab607ec27aeb472e60bb7c221);
+        
+    
+        var popup_44c6aadbfcc90716493dfb9adaa7cf0a = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_c64768608473637b63464c24f5b3c9ce = $(`<div id="html_c64768608473637b63464c24f5b3c9ce" style="width: 100.0%; height: 100.0%;">     <b>Ville :</b> Al Aaroui<br>     <b>Population :</b> 47,599     </div>`)[0];
+                popup_44c6aadbfcc90716493dfb9adaa7cf0a.setContent(html_c64768608473637b63464c24f5b3c9ce);
+            
+        
+
+        circle_marker_36d365a78e0106d8f861f0d3e0c03d0c.bindPopup(popup_44c6aadbfcc90716493dfb9adaa7cf0a)
+        ;
+
+        
+    
+    
+            var circle_marker_70c8da8581983a3ed1435fff3b6b6d7b = L.circleMarker(
+                [32.60000000000001, -6.2667],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_7c6ebbbab607ec27aeb472e60bb7c221);
+        
+    
+        var popup_8f9782064582e09dcab05b6777d59177 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_843667d2d92369d320fc5ee2bda4d7f7 = $(`<div id="html_843667d2d92369d320fc5ee2bda4d7f7" style="width: 100.0%; height: 100.0%;">     <b>Ville :</b> Qasbat Tadla<br>     <b>Population :</b> 47,343     </div>`)[0];
+                popup_8f9782064582e09dcab05b6777d59177.setContent(html_843667d2d92369d320fc5ee2bda4d7f7);
+            
+        
+
+        circle_marker_70c8da8581983a3ed1435fff3b6b6d7b.bindPopup(popup_8f9782064582e09dcab05b6777d59177)
+        ;
+
+        
+    
+    
+            var circle_marker_d11f7e5501c9c5559cddba72f14a29c7 = L.circleMarker(
+                [32.76669999999999, -6.4],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_7c6ebbbab607ec27aeb472e60bb7c221);
+        
+    
+        var popup_58adf809d161d4b575c9105534476a12 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_e0c3b5594c0dacd0a3a735e82fe8e8a2 = $(`<div id="html_e0c3b5594c0dacd0a3a735e82fe8e8a2" style="width: 100.0%; height: 100.0%;">     <b>Ville :</b> Boujad<br>     <b>Population :</b> 46,893     </div>`)[0];
+                popup_58adf809d161d4b575c9105534476a12.setContent(html_e0c3b5594c0dacd0a3a735e82fe8e8a2);
+            
+        
+
+        circle_marker_d11f7e5501c9c5559cddba72f14a29c7.bindPopup(popup_58adf809d161d4b575c9105534476a12)
+        ;
+
+        
+    
+    
+            var circle_marker_009729b602e486b6c193c2aeec40fe2c = L.circleMarker(
+                [34.3117, -2.1636],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_7c6ebbbab607ec27aeb472e60bb7c221);
+        
+    
+        var popup_c4779f80dc93ce04da984c05653da662 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_41f9bf16b0b6d2b44076f8e2ab5e14d4 = $(`<div id="html_41f9bf16b0b6d2b44076f8e2ab5e14d4" style="width: 100.0%; height: 100.0%;">     <b>Ville :</b> Jerada<br>     <b>Population :</b> 43,506     </div>`)[0];
+                popup_c4779f80dc93ce04da984c05653da662.setContent(html_41f9bf16b0b6d2b44076f8e2ab5e14d4);
+            
+        
+
+        circle_marker_009729b602e486b6c193c2aeec40fe2c.bindPopup(popup_c4779f80dc93ce04da984c05653da662)
+        ;
+
+        
+    
+    
+            var circle_marker_03642aee1c5c025ee54d6053cbaff6e4 = L.circleMarker(
+                [33.1667, -5.566699999999999],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_7c6ebbbab607ec27aeb472e60bb7c221);
+        
+    
+        var popup_c9fa482a98df2b37871738823cc6119c = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_9901bc2b994df670d1a895532ec7d695 = $(`<div id="html_9901bc2b994df670d1a895532ec7d695" style="width: 100.0%; height: 100.0%;">     <b>Ville :</b> Mrirt<br>     <b>Population :</b> 42,730     </div>`)[0];
+                popup_c9fa482a98df2b37871738823cc6119c.setContent(html_9901bc2b994df670d1a895532ec7d695);
+            
+        
+
+        circle_marker_03642aee1c5c025ee54d6053cbaff6e4.bindPopup(popup_c9fa482a98df2b37871738823cc6119c)
+        ;
+
+        
+    
+    
+            var circle_marker_51fdf25a56fb89dca179d12a5f9dfb53 = L.circleMarker(
+                [34.58519999999999, -2.5056],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_7c6ebbbab607ec27aeb472e60bb7c221);
+        
+    
+        var popup_4f2e5fbce00fb9a536215b2527de4ad2 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_78c76a3e6a17c4d9e1c496b2bddc39a0 = $(`<div id="html_78c76a3e6a17c4d9e1c496b2bddc39a0" style="width: 100.0%; height: 100.0%;">     <b>Ville :</b> El Aïoun<br>     <b>Population :</b> 41,832     </div>`)[0];
+                popup_4f2e5fbce00fb9a536215b2527de4ad2.setContent(html_78c76a3e6a17c4d9e1c496b2bddc39a0);
+            
+        
+
+        circle_marker_51fdf25a56fb89dca179d12a5f9dfb53.bindPopup(popup_4f2e5fbce00fb9a536215b2527de4ad2)
+        ;
+
+        
+    
+    
+            var circle_marker_2c9bef5ceded2734a29baf136de9c95a = L.circleMarker(
+                [33.287800000000004, -8.3422],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_7c6ebbbab607ec27aeb472e60bb7c221);
+        
+    
+        var popup_661a97cf875ca00f3a97f6805b222288 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_fdc85a6778f2bd7426fccc8d7fef4b4b = $(`<div id="html_fdc85a6778f2bd7426fccc8d7fef4b4b" style="width: 100.0%; height: 100.0%;">     <b>Ville :</b> Azemmour<br>     <b>Population :</b> 40,920     </div>`)[0];
+                popup_661a97cf875ca00f3a97f6805b222288.setContent(html_fdc85a6778f2bd7426fccc8d7fef4b4b);
+            
+        
+
+        circle_marker_2c9bef5ceded2734a29baf136de9c95a.bindPopup(popup_661a97cf875ca00f3a97f6805b222288)
+        ;
+
+        
+    
+    
+            var circle_marker_dbf69aa54ec8db2e9f36f3040c4cac51 = L.circleMarker(
+                [30.359999999999996, -9.414000000000001],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_7c6ebbbab607ec27aeb472e60bb7c221);
+        
+    
+        var popup_9709cd75c15f62a9f0531917cc43f1cb = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_df59ca942586e9d87f0527369cf6f932 = $(`<div id="html_df59ca942586e9d87f0527369cf6f932" style="width: 100.0%; height: 100.0%;">     <b>Ville :</b> Temsia<br>     <b>Population :</b> 40,780     </div>`)[0];
+                popup_9709cd75c15f62a9f0531917cc43f1cb.setContent(html_df59ca942586e9d87f0527369cf6f932);
+            
+        
+
+        circle_marker_dbf69aa54ec8db2e9f36f3040c4cac51.bindPopup(popup_9709cd75c15f62a9f0531917cc43f1cb)
+        ;
+
+        
+    
+    
+            var circle_marker_95d4cadd1a7fac13e638e2e7e2d870e6 = L.circleMarker(
+                [30.33059999999999, -5.838099999999999],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_7c6ebbbab607ec27aeb472e60bb7c221);
+        
+    
+        var popup_999559a55053e9bd663f3f464fe036b7 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_5bb8908178936feaac3455ce82a4bb79 = $(`<div id="html_5bb8908178936feaac3455ce82a4bb79" style="width: 100.0%; height: 100.0%;">     <b>Ville :</b> Zagora<br>     <b>Population :</b> 40,067     </div>`)[0];
+                popup_999559a55053e9bd663f3f464fe036b7.setContent(html_5bb8908178936feaac3455ce82a4bb79);
+            
+        
+
+        circle_marker_95d4cadd1a7fac13e638e2e7e2d870e6.bindPopup(popup_999559a55053e9bd663f3f464fe036b7)
+        ;
+
+        
+    
+    
+            var circle_marker_2d1db5a9ddc3cc72dacec8e2de98717a = L.circleMarker(
+                [31.564400000000003, -7.662800000000001],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_7c6ebbbab607ec27aeb472e60bb7c221);
+        
+    
+        var popup_5b3dc492e6715614b675127d595b23c3 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_1ca3845de66fdde9cfb39b13b467aaa5 = $(`<div id="html_1ca3845de66fdde9cfb39b13b467aaa5" style="width: 100.0%; height: 100.0%;">     <b>Ville :</b> Ait Ourir<br>     <b>Population :</b> 39,108     </div>`)[0];
+                popup_5b3dc492e6715614b675127d595b23c3.setContent(html_1ca3845de66fdde9cfb39b13b467aaa5);
+            
+        
+
+        circle_marker_2d1db5a9ddc3cc72dacec8e2de98717a.bindPopup(popup_5b3dc492e6715614b675127d595b23c3)
+        ;
+
+        
+    
+    
+            var circle_marker_789877c2219620577a873852e581426b = L.circleMarker(
+                [31.966899999999992, -6.5694],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_7c6ebbbab607ec27aeb472e60bb7c221);
+        
+    
+        var popup_a35f4c316b7df035dd7acb353222ca9c = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_cf4ab191ebb23de93a607d531ebb9a22 = $(`<div id="html_cf4ab191ebb23de93a607d531ebb9a22" style="width: 100.0%; height: 100.0%;">     <b>Ville :</b> Aziylal<br>     <b>Population :</b> 38,520     </div>`)[0];
+                popup_a35f4c316b7df035dd7acb353222ca9c.setContent(html_cf4ab191ebb23de93a607d531ebb9a22);
+            
+        
+
+        circle_marker_789877c2219620577a873852e581426b.bindPopup(popup_a35f4c316b7df035dd7acb353222ca9c)
+        ;
+
+        
+    
+    
+            var circle_marker_5100031a19d9c568b10d76ca6e76613c = L.circleMarker(
+                [34.3058, -6.3058],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_7c6ebbbab607ec27aeb472e60bb7c221);
+        
+    
+        var popup_aee34cdc3cc701c2ff9041c98ad27cd7 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_b804d658159293390d7897aa3dc8cc19 = $(`<div id="html_b804d658159293390d7897aa3dc8cc19" style="width: 100.0%; height: 100.0%;">     <b>Ville :</b> Sidi Yahia El Gharb<br>     <b>Population :</b> 37,979     </div>`)[0];
+                popup_aee34cdc3cc701c2ff9041c98ad27cd7.setContent(html_b804d658159293390d7897aa3dc8cc19);
+            
+        
+
+        circle_marker_5100031a19d9c568b10d76ca6e76613c.bindPopup(popup_aee34cdc3cc701c2ff9041c98ad27cd7)
+        ;
+
+        
+    
+    
+            var circle_marker_f92109b3b820733b5e04425d8e62444f = L.circleMarker(
+                [30.214400000000005, -9.370799999999997],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_7c6ebbbab607ec27aeb472e60bb7c221);
+        
+    
+        var popup_abd549495d7be152eea401b41aa49727 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_7fe743a1b732b1c349484a01adf98a6a = $(`<div id="html_7fe743a1b732b1c349484a01adf98a6a" style="width: 100.0%; height: 100.0%;">     <b>Ville :</b> Biougra<br>     <b>Population :</b> 37,933     </div>`)[0];
+                popup_abd549495d7be152eea401b41aa49727.setContent(html_7fe743a1b732b1c349484a01adf98a6a);
+            
+        
+
+        circle_marker_f92109b3b820733b5e04425d8e62444f.bindPopup(popup_abd549495d7be152eea401b41aa49727)
+        ;
+
+        
+    
+    
+            var circle_marker_610c4a731fc78985349e8d5b2aed9d54 = L.circleMarker(
+                [34.9333, -2.7332999999999994],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_7c6ebbbab607ec27aeb472e60bb7c221);
+        
+    
+        var popup_eb03c3379281535a6c0eff4a115ddaf7 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_94be311f637d4356c82ad84e5484b409 = $(`<div id="html_94be311f637d4356c82ad84e5484b409" style="width: 100.0%; height: 100.0%;">     <b>Ville :</b> Zaïo<br>     <b>Population :</b> 35,806     </div>`)[0];
+                popup_eb03c3379281535a6c0eff4a115ddaf7.setContent(html_94be311f637d4356c82ad84e5484b409);
+            
+        
+
+        circle_marker_610c4a731fc78985349e8d5b2aed9d54.bindPopup(popup_eb03c3379281535a6c0eff4a115ddaf7)
+        ;
+
+        
+    
+    
+            var circle_marker_594f0d3726cbcb944db2774879507933 = L.circleMarker(
+                [33.149999999999984, -5.8333],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_7c6ebbbab607ec27aeb472e60bb7c221);
+        
+    
+        var popup_3941845a3b8ee0e641c9e44939202df2 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_f87b9a79d48f92471744b644a5b8b929 = $(`<div id="html_f87b9a79d48f92471744b644a5b8b929" style="width: 100.0%; height: 100.0%;">     <b>Ville :</b> Aguelmous<br>     <b>Population :</b> 35,626     </div>`)[0];
+                popup_3941845a3b8ee0e641c9e44939202df2.setContent(html_f87b9a79d48f92471744b644a5b8b929);
+            
+        
+
+        circle_marker_594f0d3726cbcb944db2774879507933.bindPopup(popup_3941845a3b8ee0e641c9e44939202df2)
+        ;
+
+        
+    
+    
+            var circle_marker_5ee236c3c2d6ede7161e3628c1d5d3ca = L.circleMarker(
+                [33.6928, -5.3711],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_7c6ebbbab607ec27aeb472e60bb7c221);
+        
+    
+        var popup_d34576f63100df1fed01e4fab5c1c364 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_37343fe3109d78a449120d1f8fa341b3 = $(`<div id="html_37343fe3109d78a449120d1f8fa341b3" style="width: 100.0%; height: 100.0%;">     <b>Ville :</b> El Hajeb<br>     <b>Population :</b> 35,282     </div>`)[0];
+                popup_d34576f63100df1fed01e4fab5c1c364.setContent(html_37343fe3109d78a449120d1f8fa341b3);
+            
+        
+
+        circle_marker_5ee236c3c2d6ede7161e3628c1d5d3ca.bindPopup(popup_d34576f63100df1fed01e4fab5c1c364)
+        ;
+
+        
+    
+    
+            var circle_marker_6547265368e9fea4f8f226245ba674cf = L.circleMarker(
+                [35.15, -3.0],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_7c6ebbbab607ec27aeb472e60bb7c221);
+        
+    
+        var popup_42727b1dcaa12622a9115729ba8e1033 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_899f5447ab0e1cd041cb923e1eff6742 = $(`<div id="html_899f5447ab0e1cd041cb923e1eff6742" style="width: 100.0%; height: 100.0%;">     <b>Ville :</b> Zeghanghane<br>     <b>Population :</b> 34,025     </div>`)[0];
+                popup_42727b1dcaa12622a9115729ba8e1033.setContent(html_899f5447ab0e1cd041cb923e1eff6742);
+            
+        
+
+        circle_marker_6547265368e9fea4f8f226245ba674cf.bindPopup(popup_42727b1dcaa12622a9115729ba8e1033)
+        ;
+
+        
+    
+    
+            var circle_marker_364010512390a17c2aa0d528991769a3 = L.circleMarker(
+                [35.15, -3.8499999999999996],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_7c6ebbbab607ec27aeb472e60bb7c221);
+        
+    
+        var popup_9bbb7d28982d16a43c2b99fabf63183f = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_db3378091ac669a1b829581397dfebcc = $(`<div id="html_db3378091ac669a1b829581397dfebcc" style="width: 100.0%; height: 100.0%;">     <b>Ville :</b> Imzouren<br>     <b>Population :</b> 33,852     </div>`)[0];
+                popup_9bbb7d28982d16a43c2b99fabf63183f.setContent(html_db3378091ac669a1b829581397dfebcc);
+            
+        
+
+        circle_marker_364010512390a17c2aa0d528991769a3.bindPopup(popup_9bbb7d28982d16a43c2b99fabf63183f)
+        ;
+
+        
+    
+    
+            var circle_marker_abde29a8226ff7ec21d1cfb48e467862 = L.circleMarker(
+                [33.5533, -7.482199999999999],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_7c6ebbbab607ec27aeb472e60bb7c221);
+        
+    
+        var popup_078e6ef8592c32a3f90d3c02a4e7eb9f = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_810610c46378685afd4764b33862449d = $(`<div id="html_810610c46378685afd4764b33862449d" style="width: 100.0%; height: 100.0%;">     <b>Ville :</b> Tit Mellil<br>     <b>Population :</b> 32,782     </div>`)[0];
+                popup_078e6ef8592c32a3f90d3c02a4e7eb9f.setContent(html_810610c46378685afd4764b33862449d);
+            
+        
+
+        circle_marker_abde29a8226ff7ec21d1cfb48e467862.bindPopup(popup_078e6ef8592c32a3f90d3c02a4e7eb9f)
+        ;
+
+        
+    
+    
+            var circle_marker_7c65332714607ac0d347df825d6818b1 = L.circleMarker(
+                [34.559999999999995, -5.949999999999999],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_7c6ebbbab607ec27aeb472e60bb7c221);
+        
+    
+        var popup_b3f8baf49ccce43dad6dcf3c8c61473b = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_212a8907c9ba58b9766d5dc30fd7a1da = $(`<div id="html_212a8907c9ba58b9766d5dc30fd7a1da" style="width: 100.0%; height: 100.0%;">     <b>Ville :</b> Mechraa Bel Ksiri<br>     <b>Population :</b> 31,497     </div>`)[0];
+                popup_b3f8baf49ccce43dad6dcf3c8c61473b.setContent(html_212a8907c9ba58b9766d5dc30fd7a1da);
+            
+        
+
+        circle_marker_7c65332714607ac0d347df825d6818b1.bindPopup(popup_b3f8baf49ccce43dad6dcf3c8c61473b)
+        ;
+
+        
+    
+    
+            var circle_marker_47db26fe7baa9ec0f097fabff64488d0 = L.circleMarker(
+                [31.8347, -7.3125],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_7c6ebbbab607ec27aeb472e60bb7c221);
+        
+    
+        var popup_4bfdb0c57482a8b89b2b8cc10de21e62 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_7d598f03a0460e60756d0a25e923c3fe = $(`<div id="html_7d598f03a0460e60756d0a25e923c3fe" style="width: 100.0%; height: 100.0%;">     <b>Ville :</b> Al ’Attawia<br>     <b>Population :</b> 30,315     </div>`)[0];
+                popup_4bfdb0c57482a8b89b2b8cc10de21e62.setContent(html_7d598f03a0460e60756d0a25e923c3fe);
+            
+        
+
+        circle_marker_47db26fe7baa9ec0f097fabff64488d0.bindPopup(popup_4bfdb0c57482a8b89b2b8cc10de21e62)
+        ;
+
+        
+    
+    
+            var circle_marker_e42a23825852c83501894804a37dbd55 = L.circleMarker(
+                [31.7311, -7.036099999999999],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_7c6ebbbab607ec27aeb472e60bb7c221);
+        
+    
+        var popup_568710ce4e537db5b521d1007ab7484e = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_1a9cb660f9d7d1f914c7bd82eaeab8bf = $(`<div id="html_1a9cb660f9d7d1f914c7bd82eaeab8bf" style="width: 100.0%; height: 100.0%;">     <b>Ville :</b> Demnat<br>     <b>Population :</b> 29,504     </div>`)[0];
+                popup_568710ce4e537db5b521d1007ab7484e.setContent(html_1a9cb660f9d7d1f914c7bd82eaeab8bf);
+            
+        
+
+        circle_marker_e42a23825852c83501894804a37dbd55.bindPopup(popup_568710ce4e537db5b521d1007ab7484e)
+        ;
+
+        
+    
+    
+            var circle_marker_7b5b190f30b7ea149329c40beab607c1 = L.circleMarker(
+                [31.436100000000003, -4.232800000000001],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_7c6ebbbab607ec27aeb472e60bb7c221);
+        
+    
+        var popup_f22dde2e4251783022c4639414f80502 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_b9cb7b2ec5272fd1c60ae894d6da453b = $(`<div id="html_b9cb7b2ec5272fd1c60ae894d6da453b" style="width: 100.0%; height: 100.0%;">     <b>Ville :</b> Arfoud<br>     <b>Population :</b> 29,279     </div>`)[0];
+                popup_f22dde2e4251783022c4639414f80502.setContent(html_b9cb7b2ec5272fd1c60ae894d6da453b);
+            
+        
+
+        circle_marker_7b5b190f30b7ea149329c40beab607c1.bindPopup(popup_f22dde2e4251783022c4639414f80502)
+        ;
+
+        
+    
+    
+            var circle_marker_784ea9e39914e91ece5738a0951ccce5 = L.circleMarker(
+                [31.499999999999993, -8.1],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_7c6ebbbab607ec27aeb472e60bb7c221);
+        
+    
+        var popup_9a8cef5cc0220b874bcc4560e2d035be = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_364f88958bbece58cff11ba126d92103 = $(`<div id="html_364f88958bbece58cff11ba126d92103" style="width: 100.0%; height: 100.0%;">     <b>Ville :</b> Tameslouht<br>     <b>Population :</b> 28,978     </div>`)[0];
+                popup_9a8cef5cc0220b874bcc4560e2d035be.setContent(html_364f88958bbece58cff11ba126d92103);
+            
+        
+
+        circle_marker_784ea9e39914e91ece5738a0951ccce5.bindPopup(popup_9a8cef5cc0220b874bcc4560e2d035be)
+        ;
+
+        
+    
+    
+            var circle_marker_cb4c752bcf265614062b3376a0d9dec2 = L.circleMarker(
+                [32.5309, -1.9650000000000003],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_7c6ebbbab607ec27aeb472e60bb7c221);
+        
+    
+        var popup_e5f07e86423ae03e8e013feb30040e34 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_0789b83872cdc5b8b0a4ee233b6c7ba2 = $(`<div id="html_0789b83872cdc5b8b0a4ee233b6c7ba2" style="width: 100.0%; height: 100.0%;">     <b>Ville :</b> Bou Arfa<br>     <b>Population :</b> 28,846     </div>`)[0];
+                popup_e5f07e86423ae03e8e013feb30040e34.setContent(html_0789b83872cdc5b8b0a4ee233b6c7ba2);
+            
+        
+
+        circle_marker_cb4c752bcf265614062b3376a0d9dec2.bindPopup(popup_e5f07e86423ae03e8e013feb30040e34)
+        ;
+
+        
+    
+    
+            var circle_marker_7453d0b8bb0b3a6123d5bc5c5db8d537 = L.circleMarker(
+                [32.8167, -8.5],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_7c6ebbbab607ec27aeb472e60bb7c221);
+        
+    
+        var popup_364f9e6f9d53a8f7cac5ab7ef012b88d = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_37b190c8d22814e7d5c6bc3e7540e950 = $(`<div id="html_37b190c8d22814e7d5c6bc3e7540e950" style="width: 100.0%; height: 100.0%;">     <b>Ville :</b> Sidi Smai’il<br>     <b>Population :</b> 28,733     </div>`)[0];
+                popup_364f9e6f9d53a8f7cac5ab7ef012b88d.setContent(html_37b190c8d22814e7d5c6bc3e7540e950);
+            
+        
+
+        circle_marker_7453d0b8bb0b3a6123d5bc5c5db8d537.bindPopup(popup_364f9e6f9d53a8f7cac5ab7ef012b88d)
+        ;
+
+        
+    
+    
+            var circle_marker_56f8723d3625a39660a1de577fc59251 = L.circleMarker(
+                [34.4833, -5.516899999999999],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_7c6ebbbab607ec27aeb472e60bb7c221);
+        
+    
+        var popup_3a82784f1d3b16fda29d14ef86c958b0 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_e25edeffa9216aaa1adf2041328a0e5f = $(`<div id="html_e25edeffa9216aaa1adf2041328a0e5f" style="width: 100.0%; height: 100.0%;">     <b>Ville :</b> Souk et Tnine Jorf el Mellah<br>     <b>Population :</b> 28,681     </div>`)[0];
+                popup_3a82784f1d3b16fda29d14ef86c958b0.setContent(html_e25edeffa9216aaa1adf2041328a0e5f);
+            
+        
+
+        circle_marker_56f8723d3625a39660a1de577fc59251.bindPopup(popup_3a82784f1d3b16fda29d14ef86c958b0)
+        ;
+
+        
+    
+    
+            var circle_marker_da210e0aa4aff27da03a31b19fc22ad2 = L.circleMarker(
+                [34.2597, -6.6499999999999995],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_7c6ebbbab607ec27aeb472e60bb7c221);
+        
+    
+        var popup_dc548791fce65be4ba8fb750f7fa9933 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_6e4faf4cf68f0d71678e3b0dab752e11 = $(`<div id="html_6e4faf4cf68f0d71678e3b0dab752e11" style="width: 100.0%; height: 100.0%;">     <b>Ville :</b> Mehdya<br>     <b>Population :</b> 28,636     </div>`)[0];
+                popup_dc548791fce65be4ba8fb750f7fa9933.setContent(html_6e4faf4cf68f0d71678e3b0dab752e11);
+            
+        
+
+        circle_marker_da210e0aa4aff27da03a31b19fc22ad2.bindPopup(popup_dc548791fce65be4ba8fb750f7fa9933)
+        ;
+
+        
+    
+    
+            var circle_marker_8952e1329ad6f8316ad6ba52a5678421 = L.circleMarker(
+                [33.9333, -5.2166999999999994],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_7c6ebbbab607ec27aeb472e60bb7c221);
+        
+    
+        var popup_e32278f27257f9e271ef3848cb57d4bd = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_37d4555c172b5f1aa6a10d4b5f56e3ff = $(`<div id="html_37d4555c172b5f1aa6a10d4b5f56e3ff" style="width: 100.0%; height: 100.0%;">     <b>Ville :</b> Aïn Taoujdat<br>     <b>Population :</b> 28,288     </div>`)[0];
+                popup_e32278f27257f9e271ef3848cb57d4bd.setContent(html_37d4555c172b5f1aa6a10d4b5f56e3ff);
+            
+        
+
+        circle_marker_8952e1329ad6f8316ad6ba52a5678421.bindPopup(popup_e32278f27257f9e271ef3848cb57d4bd)
+        ;
+
+        
+    
+    
+            var circle_marker_84939b1b96743b3a60173598bbe324b5 = L.circleMarker(
+                [31.533299999999993, -8.7667],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_7c6ebbbab607ec27aeb472e60bb7c221);
+        
+    
+        var popup_0479c1c4f9fb0636bb133b9d77cc628a = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_7ef3a136449ccd5d0fd8634abd187470 = $(`<div id="html_7ef3a136449ccd5d0fd8634abd187470" style="width: 100.0%; height: 100.0%;">     <b>Ville :</b> Chichaoua<br>     <b>Population :</b> 27,869     </div>`)[0];
+                popup_0479c1c4f9fb0636bb133b9d77cc628a.setContent(html_7ef3a136449ccd5d0fd8634abd187470);
+            
+        
+
+        circle_marker_84939b1b96743b3a60173598bbe324b5.bindPopup(popup_0479c1c4f9fb0636bb133b9d77cc628a)
+        ;
+
+        
+    
+    
+            var circle_marker_481a0b11065a0d410ba5e130eca4cb1c = L.circleMarker(
+                [34.05, -4.42],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_7c6ebbbab607ec27aeb472e60bb7c221);
+        
+    
+        var popup_6f354ff913aa2d0d07c61c38d6b7c6c0 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_0478eff6908bcb9c3eea6238725b6874 = $(`<div id="html_0478eff6908bcb9c3eea6238725b6874" style="width: 100.0%; height: 100.0%;">     <b>Ville :</b> Tahla<br>     <b>Population :</b> 27,729     </div>`)[0];
+                popup_6f354ff913aa2d0d07c61c38d6b7c6c0.setContent(html_0478eff6908bcb9c3eea6238725b6874);
+            
+        
+
+        circle_marker_481a0b11065a0d410ba5e130eca4cb1c.bindPopup(popup_6f354ff913aa2d0d07c61c38d6b7c6c0)
+        ;
+
+        
+    
+    
+            var circle_marker_ef85b251e80c5e38d3d095d13316b988 = L.circleMarker(
+                [32.4167, -6.3333],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_7c6ebbbab607ec27aeb472e60bb7c221);
+        
+    
+        var popup_ca9fd54a270102c2d1733ff6db986a0b = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_4d8247a5c21a7d8a7b719fa7696833dd = $(`<div id="html_4d8247a5c21a7d8a7b719fa7696833dd" style="width: 100.0%; height: 100.0%;">     <b>Ville :</b> Oulad Yaïch<br>     <b>Population :</b> 27,476     </div>`)[0];
+                popup_ca9fd54a270102c2d1733ff6db986a0b.setContent(html_4d8247a5c21a7d8a7b719fa7696833dd);
+            
+        
+
+        circle_marker_ef85b251e80c5e38d3d095d13316b988.bindPopup(popup_ca9fd54a270102c2d1733ff6db986a0b)
+        ;
+
+        
+    
+    
+            var circle_marker_e0b627654e22532359be48a17f253954 = L.circleMarker(
+                [34.87859999999999, -6.2933],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_7c6ebbbab607ec27aeb472e60bb7c221);
+        
+    
+        var popup_523da18ef0f53aa0a030a9582332a889 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_12cbab80a7e65f8d185ef777750a9055 = $(`<div id="html_12cbab80a7e65f8d185ef777750a9055" style="width: 100.0%; height: 100.0%;">     <b>Ville :</b> Moulay Bousselham<br>     <b>Population :</b> 26,608     </div>`)[0];
+                popup_523da18ef0f53aa0a030a9582332a889.setContent(html_12cbab80a7e65f8d185ef777750a9055);
+            
+        
+
+        circle_marker_e0b627654e22532359be48a17f253954.bindPopup(popup_523da18ef0f53aa0a030a9582332a889)
+        ;
+
+        
+    
+    
+            var circle_marker_3a10faa407a42864ab3e46f9cde226b2 = L.circleMarker(
+                [35.15, -2.9666999999999994],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_7c6ebbbab607ec27aeb472e60bb7c221);
+        
+    
+        var popup_944efda4c109fe977f8eccfb5a689790 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_266884ae381708ee81e187c2b1d99da3 = $(`<div id="html_266884ae381708ee81e187c2b1d99da3" style="width: 100.0%; height: 100.0%;">     <b>Ville :</b> Iheddadene<br>     <b>Population :</b> 26,582     </div>`)[0];
+                popup_944efda4c109fe977f8eccfb5a689790.setContent(html_266884ae381708ee81e187c2b1d99da3);
+            
+        
+
+        circle_marker_3a10faa407a42864ab3e46f9cde226b2.bindPopup(popup_944efda4c109fe977f8eccfb5a689790)
+        ;
+
+        
+    
+    
+            var circle_marker_c5edb0bb48a464d17008cd41165b2906 = L.circleMarker(
+                [33.05, -3.9833],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_7c6ebbbab607ec27aeb472e60bb7c221);
+        
+    
+        var popup_6b2fceb7cca9a07bca052123ac1b87d3 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_2d4b36051967382b15b14b4eff1a8078 = $(`<div id="html_2d4b36051967382b15b14b4eff1a8078" style="width: 100.0%; height: 100.0%;">     <b>Ville :</b> Missour<br>     <b>Population :</b> 25,584     </div>`)[0];
+                popup_6b2fceb7cca9a07bca052123ac1b87d3.setContent(html_2d4b36051967382b15b14b4eff1a8078);
+            
+        
+
+        circle_marker_c5edb0bb48a464d17008cd41165b2906.bindPopup(popup_6b2fceb7cca9a07bca052123ac1b87d3)
+        ;
+
+        
+    
+    
+            var circle_marker_33b025290c112d11f2a5b285745e5ec4 = L.circleMarker(
+                [32.6414, -5.920599999999999],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_7c6ebbbab607ec27aeb472e60bb7c221);
+        
+    
+        var popup_0af72f3c4238cd18a10afb6e817a1217 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_8bd4c305945d2f8cb21cb3477c863bd9 = $(`<div id="html_8bd4c305945d2f8cb21cb3477c863bd9" style="width: 100.0%; height: 100.0%;">     <b>Ville :</b> Zawyat ech Cheïkh<br>     <b>Population :</b> 25,388     </div>`)[0];
+                popup_0af72f3c4238cd18a10afb6e817a1217.setContent(html_8bd4c305945d2f8cb21cb3477c863bd9);
+            
+        
+
+        circle_marker_33b025290c112d11f2a5b285745e5ec4.bindPopup(popup_0af72f3c4238cd18a10afb6e817a1217)
+        ;
+
+        
+    
+    
+            var circle_marker_d33cc86d875950aa64531544ba2e8342 = L.circleMarker(
+                [34.13329999999999, -6.733299999999999],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_7c6ebbbab607ec27aeb472e60bb7c221);
+        
+    
+        var popup_8615790afc149e9963b7fd1af4a9388f = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_23b4f9374a3748a9d0f3b660f04e8656 = $(`<div id="html_23b4f9374a3748a9d0f3b660f04e8656" style="width: 100.0%; height: 100.0%;">     <b>Ville :</b> Bouknadel<br>     <b>Population :</b> 25,255     </div>`)[0];
+                popup_8615790afc149e9963b7fd1af4a9388f.setContent(html_23b4f9374a3748a9d0f3b660f04e8656);
+            
+        
+
+        circle_marker_d33cc86d875950aa64531544ba2e8342.bindPopup(popup_8615790afc149e9963b7fd1af4a9388f)
+        ;
+
+        
+    
+    
+            var circle_marker_9d6ca4b58584bdd236cf1974969b10ee = L.circleMarker(
+                [33.959799999999994, -4.9954],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_7c6ebbbab607ec27aeb472e60bb7c221);
+        
+    
+        var popup_705b174c46b8dbc6894cfd77017a3273 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_ac4a4ba89ac109b1e86864faf6f62e52 = $(`<div id="html_ac4a4ba89ac109b1e86864faf6f62e52" style="width: 100.0%; height: 100.0%;">     <b>Ville :</b> Oulad Tayeb<br>     <b>Population :</b> 24,594     </div>`)[0];
+                popup_705b174c46b8dbc6894cfd77017a3273.setContent(html_ac4a4ba89ac109b1e86864faf6f62e52);
+            
+        
+
+        circle_marker_9d6ca4b58584bdd236cf1974969b10ee.bindPopup(popup_705b174c46b8dbc6894cfd77017a3273)
+        ;
+
+        
+    
+    
+            var circle_marker_f0e180e09ea7572490f1cf3af07d7b0d = L.circleMarker(
+                [30.64079999999999, -8.474999999999998],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_7c6ebbbab607ec27aeb472e60bb7c221);
+        
+    
+        var popup_b7f2b31a23349c3ad3bfa656394cd814 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_4479d523fdfcf524e8dc7cbf97737d24 = $(`<div id="html_4479d523fdfcf524e8dc7cbf97737d24" style="width: 100.0%; height: 100.0%;">     <b>Ville :</b> Oulad Barhil<br>     <b>Population :</b> 24,288     </div>`)[0];
+                popup_b7f2b31a23349c3ad3bfa656394cd814.setContent(html_4479d523fdfcf524e8dc7cbf97737d24);
+            
+        
+
+        circle_marker_f0e180e09ea7572490f1cf3af07d7b0d.bindPopup(popup_b7f2b31a23349c3ad3bfa656394cd814)
+        ;
+
+        
+    
+    
+            var circle_marker_7df6360f396a38ee2ee68bdf7cebb506 = L.circleMarker(
+                [33.3737, -8.0002],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_7c6ebbbab607ec27aeb472e60bb7c221);
+        
+    
+        var popup_660b75cf056004d6ee75c1e75065d180 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_e34a737eb439d69f3f08359fdd608ad7 = $(`<div id="html_e34a737eb439d69f3f08359fdd608ad7" style="width: 100.0%; height: 100.0%;">     <b>Ville :</b> Bir Jdid<br>     <b>Population :</b> 24,136     </div>`)[0];
+                popup_660b75cf056004d6ee75c1e75065d180.setContent(html_e34a737eb439d69f3f08359fdd608ad7);
+            
+        
+
+        circle_marker_7df6360f396a38ee2ee68bdf7cebb506.bindPopup(popup_660b75cf056004d6ee75c1e75065d180)
+        ;
+
+        
+    
+    
+            var circle_marker_8c5ddf26e979f8205ce92a0d4b151698 = L.circleMarker(
+                [26.158, -10.567],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_7c6ebbbab607ec27aeb472e60bb7c221);
+        
+    
+        var popup_e05e068fe2cae89e3ebb87cf1750d74d = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_6f4273bb1a3453f228047db1c0b805a9 = $(`<div id="html_6f4273bb1a3453f228047db1c0b805a9" style="width: 100.0%; height: 100.0%;">     <b>Ville :</b> Tifariti<br>     <b>Population :</b> 3,000     </div>`)[0];
+                popup_e05e068fe2cae89e3ebb87cf1750d74d.setContent(html_6f4273bb1a3453f228047db1c0b805a9);
+            
+        
+
+        circle_marker_8c5ddf26e979f8205ce92a0d4b151698.bindPopup(popup_e05e068fe2cae89e3ebb87cf1750d74d)
+        ;
+
+        
+    
+    
+            marker_cluster_7c6ebbbab607ec27aeb472e60bb7c221.addTo(map_851e0c3aea7ccc5fee188c59ca8ccd8d);
+        
+    
+            var tile_layer_cff7197d5c57d927c7f2f1e008d3a078 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detectRetina": false, "maxNativeZoom": 19, "maxZoom": 19, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_cff7197d5c57d927c7f2f1e008d3a078.addTo(map_851e0c3aea7ccc5fee188c59ca8ccd8d);
+        
+    
+            var tile_layer_27f62b8ae7b5c4d03d99cf00aff78880 = L.tileLayer(
+                "https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca href=\"https://carto.com/attributions\"\u003eCARTO\u003c/a\u003e", "detectRetina": false, "maxNativeZoom": 20, "maxZoom": 20, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abcd", "tms": false}
+            );
+        
+    
+            tile_layer_27f62b8ae7b5c4d03d99cf00aff78880.addTo(map_851e0c3aea7ccc5fee188c59ca8ccd8d);
+        
+    
+            var tile_layer_fcb3220d39234fa51c0e171e433ea3c2 = L.tileLayer(
+                "https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca href=\"https://carto.com/attributions\"\u003eCARTO\u003c/a\u003e", "detectRetina": false, "maxNativeZoom": 20, "maxZoom": 20, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abcd", "tms": false}
+            );
+        
+    
+            tile_layer_fcb3220d39234fa51c0e171e433ea3c2.addTo(map_851e0c3aea7ccc5fee188c59ca8ccd8d);
+        
+    
+            var layer_control_d2052e60518a93b89e8a8b91222604a9_layers = {
+                base_layers : {
+                    "openstreetmap" : tile_layer_7ea634f833fba9d6f799e286896c78ea,
+                    "OpenStreetMap" : tile_layer_cff7197d5c57d927c7f2f1e008d3a078,
+                    "Dark Matter" : tile_layer_27f62b8ae7b5c4d03d99cf00aff78880,
+                    "Light Positron" : tile_layer_fcb3220d39234fa51c0e171e433ea3c2,
+                },
+                overlays :  {
+                    "macro_element_7c6ebbbab607ec27aeb472e60bb7c221" : marker_cluster_7c6ebbbab607ec27aeb472e60bb7c221,
+                },
+            };
+            let layer_control_d2052e60518a93b89e8a8b91222604a9 = L.control.layers(
+                layer_control_d2052e60518a93b89e8a8b91222604a9_layers.base_layers,
+                layer_control_d2052e60518a93b89e8a8b91222604a9_layers.overlays,
+                {"autoZIndex": true, "collapsed": true, "position": "topright"}
+            ).addTo(map_851e0c3aea7ccc5fee188c59ca8ccd8d);
+
+        
+    
+            var tile_layer_f26db1c1b07d69373e96da9dd65bc311 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detectRetina": false, "maxNativeZoom": 19, "maxZoom": 19, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+            var mini_map_fc400d2ec8234ca7101fdbe26304e2e2 = new L.Control.MiniMap(
+                tile_layer_f26db1c1b07d69373e96da9dd65bc311,
+                {"autoToggleDisplay": false, "centerFixed": false, "collapsedHeight": 25, "collapsedWidth": 25, "height": 150, "minimized": false, "position": "bottomright", "toggleDisplay": false, "width": 150, "zoomAnimation": false, "zoomLevelOffset": -5}
+            );
+            map_851e0c3aea7ccc5fee188c59ca8ccd8d.addControl(mini_map_fc400d2ec8234ca7101fdbe26304e2e2);
+        
+    
+            var measure_control_1a2c58accbadca1789900b82aa9e39f6 = new L.Control.Measure(
+                {"position": "topright", "primaryAreaUnit": "sqmeters", "primaryLengthUnit": "kilometers", "secondaryAreaUnit": "acres", "secondaryLengthUnit": "miles"});
+            map_851e0c3aea7ccc5fee188c59ca8ccd8d.addControl(measure_control_1a2c58accbadca1789900b82aa9e39f6);
+
+            // Workaround for using this plugin with Leaflet>=1.8.0
+            // https://github.com/ljagis/leaflet-measure/issues/171
+            L.Control.Measure.include({
+                _setCaptureMarkerIcon: function () {
+                    // disable autopan
+                    this._captureMarker.options.autoPanOnFocus = false;
+                    // default function
+                    this._captureMarker.setIcon(
+                        L.divIcon({
+                            iconSize: this._map.getSize().multiplyBy(2)
+                        })
+                    );
+                },
+            });
+
+        
+    
+            var mouse_position_0f0bd0e623a11727bb753951d89b0680 = new L.Control.MousePosition(
+                {"emptyString": "Unavailable", "lngFirst": false, "numDigits": 5, "position": "bottomright", "prefix": "Coordonn\u00e9es :", "separator": " | "}
+            );
+            mouse_position_0f0bd0e623a11727bb753951d89b0680.options["latFormatter"] =
+                undefined;
+            mouse_position_0f0bd0e623a11727bb753951d89b0680.options["lngFormatter"] =
+                undefined;
+            map_851e0c3aea7ccc5fee188c59ca8ccd8d.addControl(mouse_position_0f0bd0e623a11727bb753951d89b0680);
+        
+    
+            var marker_cluster_7c6ebbbab607ec27aeb472e60bb7c221searchControl = new L.Control.Search({
+                layer: marker_cluster_7c6ebbbab607ec27aeb472e60bb7c221,
+                
+                collapsed: false,
+                textPlaceholder: 'Rechercher une ville',
+                position:'topleft',
+            
+                initial: false,
+                
+                hideMarkerOnCollapse: true
+            
+                });
+                marker_cluster_7c6ebbbab607ec27aeb472e60bb7c221searchControl.on('search:locationfound', function(e) {
+                    marker_cluster_7c6ebbbab607ec27aeb472e60bb7c221.setStyle(function(feature){
+                        return feature.properties.style
+                    })
+                    
+                    if(e.layer._popup)
+                        e.layer.openPopup();
+                })
+                marker_cluster_7c6ebbbab607ec27aeb472e60bb7c221searchControl.on('search:collapsed', function(e) {
+                        marker_cluster_7c6ebbbab607ec27aeb472e60bb7c221.setStyle(function(feature){
+                            return feature.properties.style
+                    });
+                });
+            map_851e0c3aea7ccc5fee188c59ca8ccd8d.addControl( marker_cluster_7c6ebbbab607ec27aeb472e60bb7c221searchControl );
+
+        
+    
+            L.control.fullscreen(
+                {"forceSeparateButton": false, "position": "topright", "title": "Full Screen", "titleCancel": "Exit Full Screen"}
+            ).addTo(map_851e0c3aea7ccc5fee188c59ca8ccd8d);
+        
+</script>
+</html>
